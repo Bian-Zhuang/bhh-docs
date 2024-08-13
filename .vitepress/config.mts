@@ -2,7 +2,7 @@ import {defineConfig} from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    base: 'bhh-docs',
+    base: '/bhh-docs/',
     title: "卞哈哈的文档",
     head: [
         ['link', {rel: 'icon', href: '/ico.png'}]  // 确保路径正确
