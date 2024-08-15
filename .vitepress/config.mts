@@ -5,7 +5,7 @@ export default defineConfig({
     base: '/bhh-docs/',
     title: "卞哈哈的文档",
     head: [
-        ['link', {rel: 'icon', href: '/ico.png'}]  // 确保路径正确
+        ['link', { rel: 'icon', href: '/bhh-docs/ico.png' }]
     ],
     themeConfig: {
         //网站的logo
@@ -82,6 +82,14 @@ export default defineConfig({
                             {text: '路由与导航', link: '/frameworks/angular/routing'},
                         ]
                     }
+                ]
+            },
+            {
+                text: '知识库',
+                collapsed: true, // 默认折叠
+                items: [
+                    {text: '保持元素宽高比', link: '/docs/repository/eleaspectratio'},
+                    {text: '倾斜按钮', link: '/docs/repository/tiltbutton'},
                 ]
             },
             {
