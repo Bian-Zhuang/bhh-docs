@@ -92,6 +92,8 @@ export default defineConfig({
                     {text: '倾斜按钮', link: '/docs/repository/tiltbutton'},
                     {text: '属性读取方式', link: '/docs/repository/attrread'},
                     {text: '手写Promise.all', link: '/docs/repository/promiseall'},
+                    {text: '深浅拷贝', link: '/docs/repository/depthclone'},
+
                 ]
             },
             {
