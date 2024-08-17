@@ -29,11 +29,11 @@ const worker = new Worker('worker.js');
 
 // 接受 Worker 中返回的消息
 worker.onmessage = function (event) {
-    console.log('Processed data:', event.data);
+    console.log('Worker返回的数据:', event.data);
 };
 // 监听 Worker 中的错误
 worker.onerror = function (event) {
-    console.error(event.message);
+    console.error('Worker返回的错误', event.message);
     // 可以在这里进行错误处理，比如显示错误信息或重新启动 Worker
 };
 
@@ -55,17 +55,17 @@ self.onmessage = function (event) {
 
     // 正常情况下会返回消息
     let result = _.map(data, item => item * 2);
-    self.postMessage(result); // 向主线程发送消息
+    postMessage(result); // 向主线程发送消息
 };
 ```
 
-| 事件 | 描述 |
-|:------------:|:----------------------------:|
+|   事件    |          描述           |
+|:-------:|:---------------------:|
 | message | 当 Worker 接收到主线程的消息时触发 |
-| error | 当worker内部出现错误时触发 |
+|  error  |   当worker内部出现错误时触发    |
 
-|   方法    | 描述 |
-|:-------:|:----------------------------:|
+|    方法     |      描述       |
+|:---------:|:-------------:|
 | terminate | 终止 Web Worker |
 
 	
