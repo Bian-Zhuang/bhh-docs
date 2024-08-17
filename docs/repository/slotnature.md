@@ -34,7 +34,7 @@ export default {
     console.log(props, slots);
     const defaultVNoode = slots.default()
     const slot1VNoode = slots.slot1()
-    const slot2VNoode = slots.slot2({ meg: '随便传什么' })
+    const slot2VNoode = slots.slot2({ msg: '随便传什么' })
     return () => {
       return createElementVNode('div', null, [
         ...defaultVNoode,

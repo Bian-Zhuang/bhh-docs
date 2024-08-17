@@ -94,6 +94,7 @@ export default defineConfig({
                     {text: '手写Promise.all', link: '/docs/repository/promiseall'},
                     {text: '深浅拷贝', link: '/docs/repository/depthclone'},
                     {text: '插槽的本质', link: '/docs/repository/slotnature'},
+                    {text: 'webworker', link: '/docs/repository/webworker'},
                 ]
             },
             {
